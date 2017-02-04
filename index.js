@@ -15,7 +15,18 @@ console.log(pet);
 *
 * Each value should be a String. 
 **/
+var firstName = ' Joshua';
+var lastName = ' Vallejo';
+var birthPlace = ' Sacramento';
+var favoriteFood = ' PB&Js';
+var bestMovie = ' Die Hard';
+var favLoveSong = ' Dont Know how';
+var cuteAnimal = ' Monkeys';
+var favColor = 'Grey';
+var favSneaker = 'Chucks';
+var coffeeShop = 'The Manifest';
 
+console.log(favColor);
 
 /**
 * #2
@@ -25,6 +36,16 @@ console.log(pet);
 *
 * Each value should be a Number
 **/
+var favoriteNumber = 2; 
+var currentYear = 2017;
+var thatOnePrinceSong = 1987;
+var tokyoOlympics = 2020;
+var mariahCareyAge = 45; 
+var currentTemp = 68;
+var studentsInClass = 12;
+var numOfJapanPrefectures = 45; 
+var currentIphoneModel = 7; 
+var shoeSize = 10;
 
 
 /**
@@ -35,8 +56,16 @@ console.log(pet);
 *
 * Each value should be a Boolean
 **/
-
-
+var likesMcDonalds= false;
+var watchedMrRobot= true;
+var ranMarathon= false; 
+var wrestledABear= false;
+var lovesDonuts= true;
+var readHarryPotter= true; 
+var sleptInClass= false; 
+var drinksCoffee= true;
+var shopsAtWholeFoods= false;
+var ownsRedShoes= false; 
 /**
 * #4
 * Variables with a Null value
@@ -45,12 +74,15 @@ console.log(pet);
 *
 * Each value should be Null 
 **/
-
+var completedPrepClass= null;
+var traveledToMars= null; 
+var scoredTDinNFL= null; 
 
 /*
 #5. 
 * What is the difference between null and undefined? Type your answer in two or three commented-out sentences.
-*/
+*Undefined is when you default to zero, null is when you make an active choice for that variable to be zero.**/
+
 
 
 /**
@@ -65,19 +97,26 @@ console.log(pet);
 * Declare a variable named `mixPlate` and assign it an array containing different data types of your choosing.
 **/
 
-
+var plateLunch = [11,12,1,2,3];
+var fruitBasket = ['banana','apple','bacon','pineapple','grapess'];
+var westCoast = ['CA','WA','OR','NV','AZ'];
+var lotteryResult = [5,6,7,8,2344];
+var duets= [['Beatles, Beach Boys'],['Madonna, Cher'],['Ringo, John']];
 
 /*7
 * Accessing Values in Arrays
 
 var partyList = ["carrot cake", "rocky road ice cream", "mochiko chicken", "orange tang", "lemon bars"];
 
-What is the length of this array? Please print the length (a number) to the console.
-What is the index position of carrot cake? Please print this item to the console.
-What is the index position of lemon bars? Please print this item to the console.
+What is the length of this array? Please print the length (a number) to the console.5
+What is the index position of carrot cake? Please print this item to the console.0
+What is the index position of lemon bars? Please print this item to the console.4
 */
 
-
+var partyList = ["carrot cake", "rocky road ice cream", "mochiko chicken", "orange tang", "lemon bars"];
+console.log(partyList.length);
+console.log(partyList[0]);
+console.log(partyList[4]);
 
 /*
 * #8 
@@ -92,9 +131,22 @@ What is the index position of lemon bars? Please print this item to the console.
 *Declare a new variable, `mariahStory`. Assign it the value of concatenating the variables `mariahCareyAge`, `favSneaker`, `favLoveSong` and `coffeeShop` to create the following sentence:
 At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 */
+var fullName = firstName.concat(lastName);
 
 
+var whereFrom= fullName.concat (' is from', birthPlace);
 
+var mariahStory = 'at the age of'.concat(mariahCareyAge, 'wearing her fancy', favSneaker,'sang', favLoveSong, 'at the', coffeeShop);
+console.log(mariahStory);
+
+var num1= 2;
+var num2= 10;
+var sum= num1 + num2;
+var difference= num2 - num1;
+var product= num1 * num2;
+var quotient= num2 / num1;
+
+console.log(quotient);
 /**
 * #9 Arithmetic
 * Variables with the outcome of an arithmetic operation.
@@ -107,9 +159,22 @@ At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 * Divide the two variables and store it to a new variable named `quotient`.
 * What is the remainder when you divide num1 by num2? Print your answer to the console.
 
+/**/
 
+var isStrictlyEqual= 'Tacocat'==='Tacocat';
+var isLooselyEqual= 'Tacocat' == 'tacocat' ;
+console.log(isStrictlyEqual);
+console.log(isLooselyEqual);
 
-/**
+var sameNum= '5' === 5; 
+var sameNumba= '5' == 5;
+console.log(sameNum);
+console.log(sameNumba);
+
+    
+    
+    
+    /**
 * #10
 * Comparisons & Logic
 * Variables with the outcome of a comparison operation:
@@ -122,14 +187,14 @@ At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 * Declare another variable named `sameNumba` and compare a string "5" and a number 5 using equality.
 * Print both variables to the console. If the answers are different, why? If not, why not? Write you answer two or three commented-out sentences.
 
-
-
 * Use the logical && or || and compare the following:
 * 3>2 3<1 (use or)
 * 3>2 6>3 (use and)
 * 7>2 8<5 (use and)
 * Declare variables and print the results to the console. What are the differences between the three and why?
 
+/**/
+var mybox= 5;
 
 
 /**
@@ -144,7 +209,14 @@ At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 * Write 5 different assignment statements and `console.log()` the value of the variable after each
 * assignment statement to show the current value. REMEMBER: an assignment is DIFFERENT from a declaration.
 *
+**/
+function bakePie(ingredient){
+   return "Today's special is" + ingredient + " pie.";
+}
 
+
+var pieResult= bakePie(' apple');
+console.log (pieResult);
 /**
 * Final Boss 
 * Additional exercises designed to further challenge you and give you a jump start on the next topic that'll be covered.
@@ -154,9 +226,15 @@ At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 * When the function is invoked, it should return a string, "Today's special ingredient pie." Where ingredient will be the value that you pass into the function.
 * For example, if the value is `blueberry`, it should return "Today's special blueberry pie."
 * Declare a variable 'pieResult' and assign it to the function call.
-* Console.log the variable to see the result.
+* Console.log the variable to see the result.**/
 
+function jump(height){
+    return " You jumped height " + height + " feet high";
+}
+var jumpResult= jump( 4);
+console.log (jumpResult);
 
+/**
 * Declare a Function named `jump` which has a single parameter, `height`.
 * This function should return a string, "You jumped height feet high!" Where height will be the value that you pass into the function.
 * For example, if the value is 9, it should return "You jumped 9 feet high!"
